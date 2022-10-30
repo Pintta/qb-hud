@@ -3,12 +3,6 @@ local hunger = 100
 local thirst = 100
 local isLoggedIn = false
 
-AddEventHandler('onResourceStart', function(resourceName)
-    if GetCurrentResourceName() ~= resourceName then
-        return
-    end
-end)
-
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
     isLoggedIn = false
 end)
